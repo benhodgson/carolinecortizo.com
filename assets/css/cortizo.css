@@ -13,7 +13,7 @@ body.home {
     display: table;
 }
 
-#middle {
+body.home > div {
     display: table-cell;
     vertical-align: middle;
 }
