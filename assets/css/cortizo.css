@@ -28,26 +28,33 @@ body.home nav {
     display: block;
     background-clip: border-box;
     background-origin: padding-box;
-    font-family: "Gill Sans MT", "Gill Sans", "Arial", sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     background-color: #FF8B00;
     text-align: center;
+    padding: 12px 0;
 }
 
 body.home nav ol {
     height: 100%;
-    padding: 12px;
 }
 
 body.home nav li {
     font-size: 20px;
     display: inline;
-    padding: 0 30px;
+    padding: 20px;
 }
 
 body.home nav a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+body.home nav a:before {
+    position: relative;
+    top: -1px;
+    display: inline;
+    content: '› ';
 }
 
 body.home header {
