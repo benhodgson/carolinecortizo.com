@@ -32,6 +32,10 @@ body.home nav {
     background-color: #FF8B00;
     text-align: center;
     padding: 12px 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 body.home nav ol {
@@ -48,13 +52,16 @@ body.home nav a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+    text-shadow: #333 1px 1px 1px;
 }
 
 body.home nav a:before {
     position: relative;
     top: -1px;
-    display: inline;
     content: '› ';
+}
+
+body.home nav a:hover {
 }
 
 body.home header {
