@@ -1,3 +1,11 @@
+/* Helper classes */
+
+.replace { display: none; }
+.clear { clear: both; }
+
+
+/* Site-wide */
+
 body, html {
     height: 100%;
 }
@@ -6,6 +14,9 @@ body {
     font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
     color: #555;
 }
+
+
+/* Home page */
 
 body.home {
     width: 748px;
@@ -30,7 +41,7 @@ body.home nav {
     background-clip: border-box;
     background-origin: padding-box;
     font-family: "Gill Sans", "Gill Sans MT", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    background-color: #FF8B00;
+    background-color: #ff8b00;
     text-align: center;
     padding: 12px 0;
     border-radius: 5px;
@@ -62,10 +73,7 @@ body.home nav a:before {
     content: '› ';
 }
 
-body.home nav a:hover {
-}
-
-body.home header {
+body.home header a {
     display: block;
     width: 210px;
     height: 196px;
@@ -95,10 +103,31 @@ body.home footer a:hover {
     text-decoration: underline;
 }
 
-.replace {
-    display: none;
+
+/* Main page layout */
+
+body.main header {
+    position: fixed;
+    height: 100%;
 }
 
-.clear {
-    clear: both;
+body.main header #bar {
+    position: absolute;
+    height: 100%;
+    width: 129px;
+    top: 166px;
+    background-color: #ff8b00;
+    border-top-right-radius: 5px;
+}
+
+body.main header a {
+    display: block;
+    background: url(../img/logo-small.png) transparent 0 0 no-repeat;
+    width: 134px;
+    height: 125px;
+    margin: 16px;
+}
+
+body.main section {
+
 }
