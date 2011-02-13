@@ -36,6 +36,10 @@ body.home section {
     margin: 36px auto;
 }
 
+body.home section p {
+    margin: 18px 0;
+}
+
 body.home nav {
     display: block;
     background-clip: border-box;
