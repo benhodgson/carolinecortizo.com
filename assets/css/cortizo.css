@@ -54,6 +54,22 @@ body.home nav {
     -o-border-radius: 5px;
 }
 
+body.home nav {
+    display: block;
+    background-clip: border-box;
+    background-origin: padding-box;
+    font-family: "Gill Sans", "Gill Sans MT", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background-color: #ff8b00;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 300px; /* this... */
+    margin: 0 auto; /* ...and this exist to modify the full nav into the CV download link */
+}
+
 body.home nav ol {
     height: 100%;
 }
@@ -105,33 +121,4 @@ body.home footer a {
 
 body.home footer a:hover {
     text-decoration: underline;
-}
-
-
-/* Main page layout */
-
-body.main header {
-    position: fixed;
-    height: 100%;
-}
-
-body.main header #bar {
-    position: absolute;
-    height: 100%;
-    width: 129px;
-    top: 166px;
-    background-color: #ff8b00;
-    border-top-right-radius: 5px;
-}
-
-body.main header a {
-    display: block;
-    background: url(../img/logo-small.png) transparent 0 0 no-repeat;
-    width: 134px;
-    height: 125px;
-    margin: 16px;
-}
-
-body.main section {
-
 }
